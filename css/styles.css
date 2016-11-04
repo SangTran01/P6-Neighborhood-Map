@@ -1,0 +1,106 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container {
+	height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+
+#filter {
+    display: inline;
+}
+
+#toggleView {
+    float:right;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+#map {
+    bottom:0px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    width: 70%;
+}
+#listBox {
+	background: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    height: 100%;
+    line-height: 35px;
+    padding: 10px 10px 30px 10px;
+    text-align: left;
+    width: 30%;
+}
+
+
+/*INFOBOX*/
+
+#yelpRating {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    body {
+        font-size: 12px;
+    }
+
+    #toggleView {
+        display: none;
+    }
+
+    #listBox {
+
+    }
+
+    #AppTitle {
+        font-size: 15px;
+    }
+
+    #inputBox {
+        width: 100%;
+        height: 20px;
+    }
+
+    #subTitle {
+        font-size: 12px;
+    }
+
+    ul {
+        padding: 0px;
+    }
+
+    li {
+        font-size: 10px;
+        text-align: center;
+        margin-bottom: 6px;
+        border-radius: 2px;
+    }
+
+    li:nth-child(odd) {
+        background-color: #b7d5e9;
+    }
+    li:nth-child(even) {
+        background-color: #ebf3f7;
+    }
+
+    /*INFOWINDOW*/
+    #firstHeading {
+        font-size: 18px;
+    }
+
+    .address {
+        margin: 0px;
+    }
+}

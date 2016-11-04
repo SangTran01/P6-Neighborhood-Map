@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project 6 Map App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="listBox">
+            <button id="toggleView">Hide</button>
+            <div id="listContents">
+                <h2 id="AppTitle">Map Application</h2>
+                <p>Filter: <input id="inputBox" data-bind="value: filter, valueUpdate: 'afterkeydown'" /></p>
+            
+                <h3 id="subTitle">Restaurants</h3>
+
+                <!-- LIST -->
+                <ul data-bind="foreach: filteredItems">
+                    <li data-bind="text: name, click: $parent.bounceUp"></li>         
+                </ul>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script>
+        function googleError(){
+            alert('Looks like there is a problem with google maps');
+        }
+    </script>
+    <script src="js/lib/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/lib/knockout-3.2.0.js"></script>
+    <script src="js/lib/oauth-signature.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDwycGBmF4bQLa_pSqVoCyfWXRJ1Q6Dxw&callback=initMap" 
+    onerror="googleError()" async defer></script>
+</body>
+</html>
