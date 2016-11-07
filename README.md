@@ -5,6 +5,7 @@
 This is the project 6 Neighborhood Map Project for Udacity Fullstack Nanodegree. This app covers the basics features such as...
 - AJAX requests
 - using Google maps API
+- using Knockout.js framework
 - learning how to read and use additional 3rd party APIs (i.e. Yelp)
 
 
