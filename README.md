@@ -1,4 +1,4 @@
-# project-6-fullstack
+# P6 Neighborhood Map 
 
 ## Introduction
 
@@ -7,6 +7,8 @@ This is the project 6 Neighborhood Map Project for Udacity Fullstack Nanodegree.
 - using Google maps API
 - using Knockout.js framework
 - learning how to read and use additional 3rd party APIs (i.e. Yelp)
+
+![map1](https://cloud.githubusercontent.com/assets/15135653/20070895/3b8577ae-a4f0-11e6-89ee-e724d31264d9.png)
 
 
 ## Requirements
